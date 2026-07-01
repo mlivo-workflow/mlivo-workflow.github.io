@@ -73,6 +73,9 @@
     .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
     .brand{font-weight:700;letter-spacing:.2px;color:var(--ink);font-size:1.1rem}
     .brand span{color:var(--accent)}
+    .lang{display:inline-flex;gap:6px;font-size:.85rem;border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+    .lang a{color:var(--muted)}
+    .lang a.active{color:var(--accent);font-weight:700}
     .nav-links{display:flex;gap:22px;align-items:center}
     .nav-links a{color:var(--muted);font-size:.95rem}
     .nav-links a:hover{color:var(--ink);text-decoration:none}
@@ -80,7 +83,7 @@
     .btn:hover{background:var(--accent-2);text-decoration:none;transform:translateY(-1px)}
     .btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
     .btn.ghost:hover{background:var(--soft);color:var(--accent)}
-    @media(max-width:720px){.nav-links a:not(.btn){display:none}}
+    @media(max-width:720px){.nav-links > a:not(.btn){display:none}}
 
     /* Hero */
     .hero{background:linear-gradient(160deg,var(--bg) 0%,var(--bg-2) 100%);color:#eaf2f7;padding:84px 0 72px}
@@ -159,6 +162,7 @@
         <a href="#leistungen">Leistungen</a>
         <a href="#warum">Warum</a>
         <a href="#ablauf">Ablauf</a>
+        <span class="lang"><a href="/" class="active">DE</a><a href="/en/">EN</a></span>
         <a href="#kontakt" class="btn">Erstgespräch</a>
       </nav>
     </div>
